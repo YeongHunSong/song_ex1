@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 화면</title>
+    <link type="text/css" rel="stylesheet" href="templates/css/songpro1.css">
+</head>
+<body>
+<div id="header">
+    <div class="inner_head">
+        <div class="logo">
+            <a href="/mainpage"><img src="templates/image/logo.jpg" width="250px" height="100px" alt="logo"></a>
+        </div>
+        <div class="pagename">
+            <p>로그인</p>
+        </div>
+    </div>
+</div>
+<div id="section">
+    <div class="inner_section" style="height: 320px;">
+        <form name="login" method="post" action="#">
+            <table align="center">
+                <tr>
+                    <td class="round1">아이디</td>
+                    <td><input type="text" name="id" size="22" class="loginform" autofocus></td>
+                </tr>
+                <tr>
+                    <td class="round1">비밀번호</td>
+                    <td><input type="password" name="pwd" size="22" class="loginform"></td>
+                </tr>
+            </table>
+            <table align="center">
+                <tr>
+                    <a class="loginbutton" style="margin-left: 325px;" href="/mainpage/login">로그인</a>
+                    <!-- <td><input type="submit" value="로그인" class="loginbutton"></td> -->
+                </tr>
+            </table>
+        </form>
+        <table align="center">
+            <tr>
+                <td><a class="functionlink" href="#searchid">아이디 찾기</a></td>
+                <td><a class="functionlink" href="#searchpwd">비밀번호 찾기</a></td>
+                <td><a class="functionlink" href="/signin">회원가입</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

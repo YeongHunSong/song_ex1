@@ -1,0 +1,669 @@
+*{
+    /* background-color: rgb(216, 250, 250); */
+}
+
+/* 로그인 */
+
+.round1 {
+    position: relative;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    padding: 3px;
+    border-width: 3px;
+    width: 103px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+.round2 {
+    position: relative;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    padding: 3px;
+    border-width: 3px;
+    width: 250px;
+    height: 67px;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+.loginform {
+    height: 25px;
+    font-size: 1em;
+}
+.loginbutton{
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    color: white;
+    font-size: 1em;
+    font-weight: 900;
+    padding: 3px;
+    border-width: 3px;
+    width: 338px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin: 7px 0 15px;
+}
+.functionlink{
+    position: relative;
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 3px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 900;
+    width: 100px;
+    text-decoration: none;
+}
+
+/* 회원가입, 회원정보 */
+#header{
+    position: relative;
+    z-index: 100;
+}
+.inner_head{
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    height: 175px;
+    margin: 0 auto;
+}
+
+.logo{
+    position: relative;
+    display: block;
+    margin: 28px auto;
+}
+
+.homefunc{
+    position: absolute;
+    top: 35px;
+    right: 45px;
+}
+.homefunc > a{
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 3px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.pagefunc{
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 3px;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.loginform_readonly {
+    height: 25px;
+    font-size: 1em;
+    cursor: default;
+}
+
+#section {
+    position: relative;
+    z-index: 100;
+}
+
+.inner_section{
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+}
+
+/*메인 화면*/
+
+.round3 {
+    position: relative;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    padding: 3px;
+    border-width: 3px;
+    width: 400px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    left: 300px;
+    top: -50px;
+}
+
+.round4 {
+    position: relative;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    padding: 3px;
+    border-width: 3px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    left: 320px;
+    top: -50px;
+}
+
+.round_image {
+    position: relative;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    padding: 3px;
+    border-width: 3px;
+    width: 150px;
+    height: 150px;
+    left: 320px;
+    top: -50px;
+}
+
+.round_small {
+    position: relative;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    padding: 3px;
+    border-width: 3px;
+    width: 75px;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    left: 320px;
+    top: -50px;
+}
+.search_css {
+    position: relative;
+    left: 316px;
+    top: -1000px;
+}
+
+.search_opt {
+    width: 80px;
+    padding: 3px 0px;
+    border-radius: 6px;
+    border: solid gray;
+}
+
+#footer {
+    position: relative;
+    z-index: 100;
+}
+.inner_footer{
+    position: relative;
+    z-index: 1;
+    width: 900px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.footer_css {
+    position: relative;
+    font-weight: 350;
+    font-size: 15px;
+    left: 700px;
+    top: -10px;
+}
+
+/*로그인 후 메인화면*/
+
+.mainpage_login > a {
+    position: absolute;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    padding: 3px;
+    border-width: 3px;
+    width: 60px;
+    text-align: center;
+    color: white;
+    font-size: .9em;
+    text-decoration: none;
+    left: 880px;
+    top: 0px;
+}
+
+/*내 글 및 내 댓글*/
+
+#header2{
+    position: relative;
+    z-index: 100;
+}
+.inner_head2{
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    height: 175px;
+    margin: 0 auto;
+}
+
+.homefunc2{
+    position: absolute;
+    top: 35px;
+    right: 45px;
+}
+.homefunc2 > a{
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 3px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.inner_section2{
+    position: relative;
+    z-index: 1;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.round_mytext {
+    position: relative;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    padding: 3px;
+    border-width: 3px;
+    width: 103px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    display: inline-block;
+}
+
+/*카테고리*/
+
+.post {
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.post_title{
+    position: relative;
+    border-radius: 6px;
+    border: solid gray;
+    background-color: rgb(165, 165, 165);
+    padding: 3px;
+    border-width: 3px;
+    width: 150px;
+    height: 16.5px;
+    text-align: center;
+    color: white;
+    font-size: .8em;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+.round_image2 {
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    padding: 3px;
+    border-width: 3px;
+    width: 150px;
+    height: 150px;
+    margin-top: -20px;
+    display: block;
+}
+
+.post_writer {
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    padding: 3px;
+    border-width: 3px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: .8em;
+    text-decoration: none;
+    margin-top: 2px;
+    font-weight: 600;
+    width: 96px;
+    height: 16.5px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.post_date {
+    position: absolute;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: white;
+    padding: 3px;
+    border-width: 3px;
+    text-align: center;
+    color: gray;
+    font-size: .8em;
+    margin-top: 2px;
+    margin-left: 2px;
+    width: 40px;
+    height: 16.5px;
+    display: inline-block;
+}
+
+.post_viewcount{
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    padding: 3px;
+    border-width: 3px;
+    text-align: center;
+    color: white;
+    font-size: .8em;
+    text-decoration: none;
+    margin-top: -15px;
+    font-weight: 600;
+    width: 75px;
+    height: 16.5px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.post_good{
+    position: absolute;
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    padding: 3px;
+    border-width: 3px;
+    text-align: center;
+    color: white;
+    font-size: .8em;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: -15px;
+    margin-left: 2px;
+    width: 61px;
+    height: 16.5px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.space_page {
+    display: inline-block;
+    margin-left: 320px;
+}
+
+.page {
+    display: inline-block;
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    border-width: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    width: 20px;
+    height: 22px;
+}
+
+.page_next {
+    display: inline-block;
+    border-radius: 6px;
+    border: solid gray;
+    background-color: lightgray;
+    border-width: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    width: 40px;
+    height: 22px;
+}
+
+.search_css2 {
+    display: inline-block;
+    margin-left: 320.5px;
+}
+
+/*검색 결과창*/
+
+#nav {
+    position: absolute;
+    z-index: 100;
+    left: 5px;
+}
+.inner_nav {
+    position: relative;
+    z-index: 1;
+    width: 140px;
+    height: 550px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+/*아이디 찾기*/
+
+.search_id {
+    position: absolute;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: whitesmoke;
+    text-align: center;
+    color: gray;
+    border-width: 2px;
+    width: 350px;
+    padding: 10px;
+    left: 323px;
+    top: -20px;
+}
+
+.search_id_name {
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color:gray;
+    border-width: 2px;
+    width: 90px;
+    padding: 1px;
+    text-align: center;
+    color: whitesmoke;
+    display: inline-block;
+    margin-left: 370px;
+}
+
+.search_id_form {
+    padding: 1px;
+    display: inline-block;
+    border-radius: 6px;
+    border: solid lightgray;
+    border-width: 2px;
+    font-size: 1.1em;
+}
+
+.search_id_button {
+    border-radius: 6px;
+    border: solid gray;
+    background-color:lightgray;
+    border-width: 2px;
+    width: 140px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.1em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.pagename{
+    position: absolute;
+    left: 40%;
+    top: 0px;
+    border-radius: 10px;
+    border: solid lightgray;
+    background-color: gray;
+    border-width: 3px;
+    width: 210px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    display: inline-block;
+}
+
+/*상세 글 보기*/
+
+.detail_postspace, .reply_space {
+    margin-left: 160px;
+}
+
+.detail_title {
+    display: inline-block;
+    border-radius: 6px;
+    border: solid gray;
+    background-color:lightgray;
+    border-width: 2px;
+    width: 700px;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: -80px;
+}
+
+.detail_data_writer{
+    display: inline-block;
+    border-radius: 6px;
+    border: solid gray;
+    background-color: white;
+    border-width: 2px;
+    text-align: center;
+}
+
+.detail_text {
+    display: inline-block;
+    border-radius: 10px;
+    border: solid gray;
+    width: 700px;
+    height: 400px;
+}
+.detail_text > * {
+    margin: 8px;
+}
+
+.detail_control_control {
+    display: inline-block;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    border-width: 2px;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+    width: 45px;
+}
+
+.reply_replyspace {
+    display: block;
+    border-radius: 8px;
+    border: solid gray;
+    width: 700px;
+    height: 295px;
+    margin-top: -7px;
+}
+.reply_replyspace > * {
+    margin: 8px;
+}
+
+.reply_date{
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    border: solid gray;
+    background-color: white;
+    border-width: 2px;
+    text-align: center;
+    font-size: .7em;
+    width: 80px;
+    margin-left: -8px;
+    padding: 3px;
+    top: -8px;
+}
+
+.reply_function {
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    text-align: center;
+    font-size: .8em;
+    top: -8px;
+    padding: 3px;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0px;
+
+}
+
+.reply_writer {
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    border: solid lightgray;
+    background-color: gray;
+    border-width: 2px;
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 3px;
+    top: -8px;
+    width: 95px;
+    font-size: .8em;
+    margin-right: 5px;
+}
+
+.reply_text {
+    width: 670px;
+    display: block;
+    border-radius: 8px;
+    border: solid gray;
+    font-size: .8em;
+    padding: 3px;
+    margin-top: -14px;
+}
+
+.rereply_one {
+    margin-left: 50px;
+    margin-top: -5px;
+}
+
+.rereply_text {
+    width: 628px;
+    display: block;
+    border-radius: 8px;
+    border: solid gray;
+    font-size: .8em;
+    padding: 3px;
+    margin-top: -14px;
+}
