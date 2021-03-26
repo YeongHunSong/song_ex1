@@ -9,5 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class Songpro1Controller {
 
     @GetMapping("/mainpage")
-    public String songpro1() {return "songpro1/mainpage"; }
+    public String songpro() {
+        return "/songpro1/mainpage";
+    }
 }
