@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class Songpro1Controller {
 
-    @GetMapping("/songpro1/mainpage")
+    @GetMapping("/mainpage")
     public String songpro1() {return "songpro1/mainpage"; }
 }
