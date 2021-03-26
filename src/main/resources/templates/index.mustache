@@ -15,7 +15,7 @@
                     <!-- 스프링 시큐리티에서 기본적으로 제공하는 로그인 URL로 별도의 컨트롤러를 만들 필요가 없음 -->
                     <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a> <!-- 네이버 로그인 URL은 application-oauth.properties에 등록한 redirect-url값에 맞춰 자동으로 등록 됨, 마지막 Path만 각 소셜 로그인 코드를 사용하면 됨, 여기서 naver가 마지막 Path가 됨-->
                 {{/userName}}
-                <a href="templates/songpro1/mainpage.mustache" role="button" class="btn btn-primary">프론트엔드 페이지 보러가기</a>
+                <a href="/mainpage" role="button" class="btn btn-primary">프론트엔드 페이지 보러가기</a>
             </div>
         </div>
         <br>
