@@ -4,12 +4,12 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@RequiredArgsConstructor
+/*@RequiredArgsConstructor
 @Controller
 public class Songpro1Controller {
 
     @GetMapping("/mainpage")
     public String songpro() {
-        return "/songpro1/mainpage";
+        return "mainpage";
     }
-}
+}*/

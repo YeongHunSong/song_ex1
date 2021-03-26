@@ -41,4 +41,9 @@ public class IndexController {
 
         return "posts-update";
     }
+
+    @GetMapping("/mainpage")
+    public String mainPage() {
+        return "mainpage";
+    }
 }
