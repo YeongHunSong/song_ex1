@@ -17,4 +17,19 @@ public class Songpro1Controller {
     public String signUp() {
         return "songpro1/signup";
     }
+
+    @GetMapping( "/loginn")
+    public String loginn() {
+        return "songpro1/loginn";
+    }
+
+    @GetMapping( "/mainpage-login")
+    public String mainPage_Login() {
+        return "songpro1/mainpage-login";
+    }
+
+    @GetMapping( "/memberdata")
+    public String memberData() {
+        return "songpro1/memberdata";
+    }
 }
