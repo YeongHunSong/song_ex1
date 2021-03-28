@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# 엔진엑스와 연결되지 않은 포트로 스프링 부트가 잘 수행되었는지 체크
+# 잘 떴는지 확인해야 엔진엑스 프록시 설정을 변경(switch_proxy)함
+# 엔진엑스 프록시 설정 변경은 switch.sh에서 수행
+
 ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
 source ${ABSDIR}/profile.sh
@@ -36,7 +40,3 @@ do
   echo "> Health Check 연결 실패 재시도..."
   sleep 10
 done
-
-# 엔진엑스와 연결되지 않은 포트로 스프링 부트가 잘 수행되었는지 체크
-# 잘 떴는지 확인해야 엔진엑스 프록시 설정을 변경(switch_proxy)함
-# 엔진엑스 프록시 설정 변경은 switch.sh에서 수행
