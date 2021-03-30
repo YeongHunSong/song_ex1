@@ -5,7 +5,7 @@ plugins { // Gradle 5 부터 플러그인 사용법 변경
     id 'java'
 }
 
-group 'ㄷㅌㄷㅌㄷㅌ'
+group 'song_ex1'
 version '1.0.4-SNAPSHOT-'+new Date().format("yyyyMMddHHmmss")
 sourceCompatibility = 1.8
 
