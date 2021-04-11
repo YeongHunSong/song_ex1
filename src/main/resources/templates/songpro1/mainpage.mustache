@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="kr" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>메인 화면</title>
@@ -14,9 +14,14 @@
         <!-- <div class="pagename">
             <p>회원정보</p>
         </div> -->
-        <div class="homefunc">
-            <a href="/loginn">로그인</a>
-            <a href="/signup">회원가입</a>
+        <div class="homefunc"><!-- isAnonymous() - 익명의 사용자일 경우 로그인, 회원가입 버튼 노출 / isAuthenticated() - 인증된 사용자일 경우 로그아웃 버튼 노출 / hasRole() - 특정 Role를 가진 사용자에 대해 메뉴 노출 -->
+            <a sec:authorize="isAnonymous()" th:href="@{/loginn}">로그인</a>
+            <a sec:authorize="isAuthenticated()" th:href="@{/logout}">로그아웃</a>
+            <a sec:authorize="isAnonymous()" th:href="@{/signup}">회원가입</a>
+            <a sec:authroize="hasRole('ROLE_MEMBER')" th:href="@{/memberdata}"><span sec:authentication="name"></span> 님</a><!-- username 값을 가져옴 -->
+            <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/admin}">관리자</a>
+            <!-- <a href="/loginn">로그인</a>
+            <a href="/signup">회원가입</a> -->
         </div>
     </div>
 </div>
@@ -33,10 +38,10 @@
             <p class="round4" style="top: -50px; left: 320px;">갤럭시S20FE 케이스</p><!--데이터 받아오면 인기 게시글의 제목으로 설정-->
             <img class="round_image" style="top: -64px;" src="image/main1.jpg"><!--데이터 받아오면 인기 게시글의 섬네일로 설정-->
         </label>
-        <p class="round_small" style="top: -76px; width: 95px; ">송영훈</p>                                                          <!--작성자 받아오기-->
-        <p class="round_small" style="top: -117px; left: 430px; color:gray; background-color: white; width: 40px;">01-28</p>    <!--게시 날짜 받아오기-->
-        <p class="round_small" style="top: -128px;">조회 100</p>                                                                     <!--조회수 받아오기-->
-        <p class="round_small" style="top: -169px; left: 410px; width: 60px;">추천 6</p>                                             <!--추천수 받아오기-->
+        <p class="round_small" style="top: -76px; width: 95px; ">송영훈</p><!--작성자 받아오기-->
+        <p class="round_small" style="top: -117px; left: 430px; color:gray; background-color: white; width: 40px;">01-28</p><!--게시 날짜 받아오기-->
+        <p class="round_small" style="top: -128px;">조회 100</p><!--조회수 받아오기-->
+        <p class="round_small" style="top: -169px; left: 410px; width: 60px;">추천 6</p> <!--추천수 받아오기-->
 
         <!-- 2번 인기 게시글-->
         <label>

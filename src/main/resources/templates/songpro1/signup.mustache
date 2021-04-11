@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="kr" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>회원 가입</title>
@@ -22,68 +22,68 @@
 </div>
 <div id="section">
     <div class="inner_section">
-        <form name="signin" method="post" action="">
+        <form th:action="@{/signup}" name="signin" method="post">
             <div>
                 <table align="center">
                     <label>
                         <tr>
                             <td class="round1">아이디</td>
                             <td><input type="text" name="id" size="18" class="loginform" required autofocus></td>
-                            <td class="pagefunc">중복확인</td>
+                            <td class="pagefunc">중복확인(미구현)</td>
                         </tr>
                     </label>
                     <label>
                         <tr>
                             <td class="round1">비밀번호</td>
-                            <td><input type="password" name="pwd" size="18" class="loginform" required></td>
+                            <td><input type="password" name="password" size="18" class="loginform" required></td>
                         </tr>
                     </label>
                     <label>
                         <tr>
                             <td class="round1">비밀번호 확인</td>
-                            <td><input type="password" name="pwdck" size="18" class="loginform" required></td>
-                            <td class="pagefunc">일치</td>
+                            <td><input type="password" name="pwdck" size="18" class="loginform" ></td>
+                            <td class="pagefunc">일치(미구현)</td>
                         </tr>
                     </label>
                     <label>
                         <tr>
                             <td class="round1">이름</td>
-                            <td><input type="text" name="name" size="18" class="loginform" required></td>
+                            <td><input type="text" name="name" size="18" class="loginform" r></td>
                         </tr>
                     </label>
                     <label>
                         <tr>
                             <td class="round1">별명</td>
-                            <td><input type="text" name="nick" size="18" class="loginform" required></td>
+                            <td><input type="text" name="nick" size="18" class="loginform"></td>
                         </tr>
                     </label>
                     <tr>
                         <td class="round1">성별</td>
-                        <td><label><input type="radio" name="gender" value="1" required>남자</label>
-                            <label><input type="radio" name="gender" value="2" required>여자</label>
-                            <label><input type="radio" name="gender" value="3" required>비공개</label></td>
+                        <td><label><input type="radio" name="gender" value="1" >남자</label>
+                            <label><input type="radio" name="gender" value="2" >여자</label>
+                            <label><input type="radio" name="gender" value="3" >비공개</label></td>
                     </tr>
 
                     <tr>
                         <td class="round1">생년월일</td>
-                        <td><input type="text" name="birth" size="18" class="loginform" placeholder="19970628" required></td>
+                        <td><input type="text" name="birth" size="18" class="loginform" placeholder="19970628" ></td>
                     </tr>
                     <tr>
                         <td class="round1">휴대폰번호</td>
-                        <td><input type="tel" name="phone" size="18" class="loginform" placeholder="01047043586" required></td>
+                        <td><input type="tel" name="phone" size="18" class="loginform" placeholder="01047043586" ></td>
                     </tr>
                     <tr>
                         <td class="round1">우편번호</td>
-                        <td><input type="text" name="zipcode" size="18" class="loginform_readonly" readonly required></td>
+                        <td><input type="text" name="zipcode" size="18" class="loginform_readonly" readonly ></td>
                         <td class="pagefunc">주소검색</td>
                     </tr>
                     <tr>
                         <td class="round1">도로명주소</td>
-                        <td><input type="text" name="roadname" size="18" class="loginform_readonly" readonly required></td>
+                        <td><input type="text" name="roadname" size="18" class="loginform_readonly" readonly ></td>
                     </tr>
                     <tr>
                         <td class="round1">상세주소</td>
-                        <td><input type="text" name="roadname" size="18" class="loginform" placeholder="상세주소를 입력하세요" required></td>
+                        <td><input type="text" name="roadname" size="18" class="loginform" placeholder="상세주소를 입력하세요" ></td>
                     </tr>
                 </table>
                 <table align="center">

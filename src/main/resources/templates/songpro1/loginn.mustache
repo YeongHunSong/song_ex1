@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="kr" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>로그인 화면</title>
+    <title>로그인</title>
     <link type="text/css" rel="stylesheet" href="css/songstyle.css">
 </head>
 <body>
@@ -18,28 +18,30 @@
 </div>
 <div id="section">
     <div class="inner_section" style="height: 320px;">
-        <form name="login" method="post" action="">
+        <form name="login" method="post" action="/loginn">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"><!-- form 안에 th:action="@{/loginn}" 넣으면 자동으로 csrf 토큰 값을 추가해줌 -->
+            <!-- form에 히든 타입으로 csrf 토큰 값을 넘겨줌, SpringSecurity가 적용되면 POST 방식으로 보내는 모든 데이터는 csrf 토큰 값이 필요함, 토큰 값 이 없는 상태에서 form 전송을 할 경우 에러 발생(컨트롤러에 POST 메서드를 매핑할 수 없다) -->
             <table align="center">
                 <tr>
                     <td class="round1">아이디</td>
-                    <td><input type="text" name="id" size="22" class="loginform" autofocus></td>
+                    <td><input type="text" name="username" size="22" class="loginform" autofocus></td>
                 </tr>
                 <tr>
                     <td class="round1">비밀번호</td>
-                    <td><input type="password" name="pwd" size="22" class="loginform"></td>
+                    <td><input type="password" name="password" size="22" class="loginform"></td>
                 </tr>
             </table>
             <table align="center">
                 <tr>
-                    <a class="loginbutton" style="margin-left: 325px;" href="/mainpage-login">로그인</a>
-                    <!-- <td><input type="submit" value="로그인" class="loginbutton"></td> -->
+                    <!--<a class="loginbutton" style="margin-left: 325px;" href="/mainpage-login">로그인</a> -->
+                    <td><input type="submit" value="로그인" class="loginbutton"></td>
                 </tr>
             </table>
         </form>
         <table align="center">
             <tr>
-                <td><a class="functionlink" href="/search-id">아이디 찾기</a></td>
-                <td><a class="functionlink" href="/search-pw">비밀번호 찾기</a></td>
+                <td><a class="functionlink" href="/searchid">아이디 찾기</a></td>
+                <td><a class="functionlink" href="/searchpw">비밀번호 찾기</a></td>
                 <td><a class="functionlink" href="/signup">회원가입</a></td>
             </tr>
         </table>

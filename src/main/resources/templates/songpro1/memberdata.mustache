@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="kr" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>회원 정보</title>
@@ -9,14 +9,14 @@
 <div id="header">
     <div class="inner_head">
         <div class="logo">
-            <a href="/mainpage-login"><img src="image/logo.jpg" width="250px" height="100px" alt="logo"></a>
+            <a href="/mainpage"><img src="image/logo.jpg" width="250px" height="100px" alt="logo"></a>
         </div>
         <div class="pagename">
-            <p>회원정보</p>
+            <p>회원 정보</p>
         </div>
         <div class="homefunc">
-            <a href="/memberdata">송영훈 님</a>
-            <a href="/mainpage">로그아웃</a>
+            <a sec:authroize="hasRole('ROLE_MEMBER')" th:href="@{/memberdata}"><span sec:authentication="name"></span> 님</a>
+            <a href="/logout">로그아웃</a>
         </div>
     </div>
 </div>

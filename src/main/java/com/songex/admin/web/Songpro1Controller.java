@@ -8,30 +8,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class Songpro1Controller {
 
-    @GetMapping("/mainpage")
-    public String mainPage() {
-        return "songpro1/mainpage";
-    }
+    // @GetMapping("/mainpage") public String mainPage() { return "songpro1/mainpage"; }
 
     @GetMapping( "/mainpage-login")
     public String mainPage_Login() {
         return "songpro1/mainpage-login";
     }
 
-    @GetMapping("/signup")
-    public String signUp() {
-        return "songpro1/signup";
-    }
+    // @GetMapping("/signup") public String signUp() { return "songpro1/signup"; }
 
-    @GetMapping( "/memberdata")
-    public String memberData() {
-        return "songpro1/memberdata";
-    }
+   // @GetMapping( "/memberdata") public String memberData() { return "songpro1/memberdata"; }
 
-    @GetMapping( "/loginn")
-    public String loginn() {
-        return "songpro1/loginn";
-    }
+    // @GetMapping( "/loginn") public String loginn() { return "songpro1/loginn";}
 
     @GetMapping( "/category")
     public String category() {
